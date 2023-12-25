@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "build-opencv --incDir /opt/homebrew/Cellar/opencv/4.8.1_5/include --libDir /opt/homebrew/Cellar/opencv/4.8.1_5/lib --binDir /opt/homebrew/Cellar/opencv/4.8.1_5/bin --nobuild rebuild",
-    "postinstall": "if [ ! -f node_modules/opencv4nodejs/build/Release/opencv4nodejs.node ]; then cd node_modules/opencv4nodejs/build; make; fi"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -16,12 +14,5 @@
     "node-gyp": "^10.0.1",
     "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2"
-  },
-  "opencv4nodejs": {
-    "disableAutoBuild": "1",
-    "OPENCV_INCLUDE_DIR": "/opt/homebrew/Cellar/opencv/4.8.1_5/include",
-    "OPENCV_LIB_DIR": "/opt/homebrew/Cellar/opencv/4.8.1_5/lib",
-    "OPENCV_BIN_DIR": "/opt/homebrew/Cellar/opencv/4.8.1_5/bin",
-    "autoBuildOpencvVersion": "4.6.0"
   }
 }
